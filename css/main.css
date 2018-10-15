@@ -1,0 +1,74 @@
+/*
+.background{
+    background-color: aquamarine;
+    
+}
+.link{
+    color:yellow;
+    font-size: 20px;
+}
+.new{
+    color: black;
+    font-size:40px;
+}
+.external{
+    color: red;
+}
+.exten{
+    background-color: yellow;
+}
+.even{
+    background-color: red;
+}
+.odd{
+    background-color: blue;
+}
+.sel{
+border:3px solid red;
+}*/
+body{
+    background-color: aqua;
+}
+
+
+
+.red{
+    background: red;
+}
+.green{
+    background: green;
+}
+.yellow{
+    background:yellow;
+}
+.change{
+    text-align: center;
+    
+    background-color: red;
+    font-size: 50px;
+    border:3px solid gray;
+    
+}
+input{
+    margin:10px;
+}
+.new{
+    background-color: pink;
+}
+
+button#btn{
+    width:200px;
+    height:200px;
+    background:green;
+}
+
+.first{
+    width: 200px;
+    background-color: red;
+    height: 199px;
+}
+.second{
+    width: 200px;
+    background-color: yellow;
+    height: 199px;
+}
