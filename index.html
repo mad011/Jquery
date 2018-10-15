@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jquery</title>
+  <link rel="stylesheet" href="css/main.css">
+
+    
+<!-------------------- script area------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    
+    
+    </head>
+
+<body>
+<div>this is information from server<span id="result">result</span></div>
+</body>
+    
+    <script>
+    
+jQuery("#result").load('simple.txt', 
+                       function(response,status,xhr){
+                       
+                       
+    if(status === "error"){
+        alert(xhr.status + xhr.statusText + xhr.response)
+    } 
+    else{
+ 
+    
+   console.log("you are the best")
+    }                   
+        
+
+
+});
+      
+    
+     
+
+       
+    
+    </script>
+    
+</html>
+    
