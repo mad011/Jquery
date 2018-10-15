@@ -27,7 +27,9 @@
 border:3px solid red;
 }*/
 
-
+.new{
+    border:3px solid gray;
+}
 
 
 .red{
@@ -50,9 +52,11 @@ border:3px solid red;
 input{
     margin:10px;
 }
+/*
 .new{
     background-color: pink;
 }
+*/
 
 button#btn{
     width:200px;
