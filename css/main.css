@@ -74,3 +74,10 @@ button#btn{
     background-color: yellow;
     height: 199px;
 }
+.manos{
+    color: yellow;
+}
+.example{
+    font-style:italic;
+    font-size:30px;
+}

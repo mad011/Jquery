@@ -15,31 +15,51 @@
     </head>
 
 <body>
-   <div>new entry level</div>
-   <div class="new">new entry level</div>
-<div>this is information from server<span id="result">result</span></div>
+<ul>
+  <li>foo</li>
+    <li>bar</li>
+    <li>bar</li>
+    <li>bar</li>
+        
+</ul>    
+
+    
+<ul>
+    
+    <li>new1<li>
+    <li>new2</li>
+    <li>new3</li>
+    <li>new4</li>
+    <li>new5</li>
+
+    
+    
+    
+    
+    
+    
+    </ul>    
+    
+
+<div class="zed">yes i am developer</div>   
+<div>front end developer</div>
+<div>back end developer</div>    
+
+    
+
 </body>
     
     <script>
-    
-jQuery("#result").load('simple.txt', 
-                       function(response,status,xhr){
-                       
-                       
-    if(status === "error"){
-        alert(xhr.status + xhr.statusText + xhr.response)
-    } 
-    else{
- 
-    
-   console.log("you are the best")
-    }                   
-        
+jQuery("li").click(function() {    
+
+var name = jQuery("div").hide();
+
+jQuery(name);   
 
 
 });
-      
-    
+        
+
      
 
        
