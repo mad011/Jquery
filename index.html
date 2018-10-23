@@ -15,7 +15,7 @@
     </head>
 
 <body>
-
+<div>this is information back from server<span id="result"></span></div>
 <ul>
    <li>foo</li>
     <li>bar</li>
@@ -47,28 +47,43 @@
 <div>back end developer</div>    
 
     
+   <div class="request"></div>
+<!--   <div class="new">new entry level</div>-->
+<!--<div>this is information from server<span id="result">result</span></div>-->
 
-=======
-    aaa
-   <div>new entry level</div>
-   <div class="new">new entry level</div>
-<div>this is information from server<span id="result">result</span></div>
->>>>>>> 951aed009a57b2c685662fb7532ba94567b2b1fb
 </body>
     
-    <script>
-jQuery("li").click(function() {    
+<script>
+    
+    
+//  var x =jQuery(".new").html();    
+//  jQuery('.zed').text(x);    
+    
+jQuery.ajax({
+    url:"simple.txt",
+    dataType:"text",
+    method:"GET",
+    success: gotData,
+    error: noData
+})    
+        
+    function gotData(data,status,xhr){
 
-var name = jQuery("div").hide();
+        
+        
+        console.log(data);
+        console.log(status);
+        console.log(xhr);
 
-jQuery(name);   
-
-
-});
         
 
-     
+    }
 
+     
+    function noData(xhr){
+        console.log(xhr)
+        alert("sorry something failed")
+    }
        
     
     </script>
